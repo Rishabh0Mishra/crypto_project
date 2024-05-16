@@ -1,0 +1,89 @@
+/* NFT Section */
+.nft-slider {
+    padding: 2rem;
+    height: 300px;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.nft-slider > h1 {
+    padding: 1rem 0;
+}
+
+.nft-slider > .gallery {
+    position: absolute;
+    height: 150px;
+    width: 1670px;
+    display: flex;
+    column-gap: 2rem;
+    transition: 0.5s;
+}
+
+.nft-slider > .gallery > .nft-item {
+    width: 300px;
+    background: #122640;
+    height: 100%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.nft-slider > .gallery > .nft-item > .nft-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.nft-slider > .gallery > .nft-item > .nft-image > figure {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.nft-slider > .gallery > .nft-item > .nft-image > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nft-slider > .gallery > .nft-item > .nft-name {
+    width: 50%;
+    height: 50%;
+    padding: 1rem;
+}
+
+.nft-slider > .gallery > .nft-item > .nft-name > strong {
+    text-transform: capitalize;
+}
+
+.nft-slider > .gallery > .nft-item > .nft-name > span {
+    text-transform: uppercase;
+    color: #ffffffb4;
+    font-size: 0.9rem;
+}
+
+.nft-slider > .gallery > .nft-item > .nft-rank {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bolder;
+    flex-flow: column;
+}
+
+.nft-slider > .gallery > .nft-item > .nft-rank > span:first-of-type {
+    color: #ffffffb4;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.nft-slider > .gallery > .nft-item > .nft-rank > span:last-of-type {
+    font-size: 1.8rem;
+    color: #fff;
+}
+

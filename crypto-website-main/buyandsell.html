@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Tracker</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cryptocurrency Tracker</h2>
+        <table id="cryptoTable">
+            <thead>
+                <tr>
+                    <th>Cryptocurrency</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                    <th>Market Cap</th>
+                    <th>Add to Cart</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Crypto data will be added dynamically using JavaScript -->
+            </tbody>
+        </table>
+
+        <h2>Cart</h2>
+        <div id="cart"></div>
+        <button class="total-bill-btn" onclick="showTotalBill()">Total Bill</button>
+        <p id="finalValue" style="display: none;">Final Value: $0</p>
+    </div>
+
+    <script src="buysell.js"></script>
+</body>
+</html>

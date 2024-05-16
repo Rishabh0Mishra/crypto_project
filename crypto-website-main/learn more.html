@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovrin - Learn More</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 15px 30px;
+            background-color: #1fb8ff;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .tab:hover {
+            background-color: #0a0a0a;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 2px solid #1fb8ff;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            background-color: #0a0a0a;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        h2 {
+            color: #1fb8ff;
+        }
+        p {
+            color: #ccc;
+        }
+        a {
+            color: #1fb8ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .features li:hover {
+            background-color: #1fb8ff;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color: #1fb8ff;">Sovrin - Learn More</h1>
+        <div class="tabs">
+            <div class="tab" onclick="openTab('tab1')">About</div>
+            <div class="tab" onclick="openTab('tab2')">Features</div>
+            <div class="tab" onclick="openTab('tab3')">Contact</div>
+            <div class="tab" onclick="openTab('tab4')">Team</div>
+            <div class="tab" onclick="openTab('tab5')">FAQ</div>
+        </div>
+        <div id="tab1" class="tab-content active">
+            <h2>About Sovrin</h2>
+            <p>Sovrin is a sleek and powerful cryptocurrency tracker designed to provide users with real-time information about various cryptocurrencies. Made by Shreyas Kumar, Rishabh Mishra, and Rudransh Bajpai as founders and many more contributors.</p>
+        </div>
+        <div id="tab2" class="tab-content">
+            <h2>Features</h2>
+            <ul class="features">
+                <li><strong>Real-time cryptocurrency prices:</strong> Get updated prices of various cryptocurrencies in real-time.</li>
+                <li><strong>Price change tracking:</strong> Track price changes over time to make informed decisions.</li>
+                <li><strong>Customizable watchlist:</strong> Create a personalized watchlist of your favorite cryptocurrencies.</li>
+                <li><strong>Portfolio tracking:</strong> Monitor your cryptocurrency portfolio's performance with ease.</li>
+                <li><strong>User-friendly interface:</strong> Easy-to-use interface for a seamless experience.</li>
+                <!-- Add more features -->
+            </ul>
+        </div>
+        <div id="tab3" class="tab-content">
+            <h2>Contact</h2>
+            <p>If you have any questions or feedback, feel free to contact us at <a href="mailto:contact@sovrin.com">contact@sovrin.com</a> or call us at <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
+        </div>
+        <div id="tab4" class="tab-content">
+            <h2>Team</h2>
+            <p>Our team is driven by passion and innovation. Each member contributes their unique skills and expertise to make Sovrin the best cryptocurrency tracker.</p>
+            <p>Shreyas Kumar, Rishabh Mishra, and Rudransh Bajpai are the founders, leading the team with their vision and dedication.</p>
+            <!-- Add more details about team members -->
+        </div>
+        <div id="tab5" class="tab-content">
+            <h2>FAQ</h2>
+            <p>Coming soon...</p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabContent, tabLinks;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            tabLinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
